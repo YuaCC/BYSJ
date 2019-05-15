@@ -190,7 +190,7 @@ def train_M_SOLVER(sess):
 
 
 tf.summary.scalar("build_loss", BUILD_LOSS)
-tf.summary.scalar("m_loss", BUILD_LOSS)
+tf.summary.scalar("m_loss", M_LOSS)
 summary_op = tf.summary.merge_all()
 
 with tf.Session() as sess:
